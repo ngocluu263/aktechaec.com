@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.Master.cs" Inherits="aktech.Masterpages.Default" %>
+
+<%@ Register src="../Usercontrols/Header.ascx" tagname="Header" tagprefix="uc1" %>
+<%@ Register src="../Usercontrols/MenuTop.ascx" tagname="MenuTop" tagprefix="uc2" %>
+<%@ Register src="../Usercontrols/Partner.ascx" tagname="Partner" tagprefix="uc7" %>
+<%@ Register src="../Usercontrols/Footer.ascx" tagname="Footer" tagprefix="uc8" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/Resources/styles/styles.css"/>
+    <script type="text/javascript" src="/Resources/scripts/jquery.min.1.11.2.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!--Header-->
+        <uc1:Header ID="Header1" runat="server" />
+        <!--End Header-->
+        <!--MenuTop-->
+        <uc2:MenuTop ID="MenuTop1" runat="server" />
+        <!--End MenuTop-->
+        <main class="main" role="main">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </main>
+        <!--Partner-->
+        <uc7:Partner ID="Partner1" runat="server" />
+        <!--End Partner-->
+        <!--Footer-->
+        <uc8:Footer ID="Footer1" runat="server" />
+        <!--End Footer-->
+        <script src="/Resources/scripts/jquery.scrollToTop.min.js"></script> 
+        <script type="text/javascript" src="/Resources/scripts/bxslider.js"></script> 
+        <script type="text/javascript" src="/Resources/scripts/jquery.nivo.slider.js"></script> 
+        <script type="text/javascript" src="/Resources/scripts/wow.js"></script> 
+        <script>
+            wow = new WOW({});
+            wow.init();
+        </script> 
+        <script type="text/javascript" src="/Resources/scripts/js.js"></script>
+    </form>
+</body>
+</html>

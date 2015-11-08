@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document */
+#back-top {
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+}
+#back-top a {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	/* transition */
+	-webkit-transition: 0.9s;
+	-moz-transition: 0.9s;
+	transition: 0.9s;
+	text-align: center;
+	padding: 6px 10px 8px;
+	background: rgba(0,0,0,0.4);
+	-webkit-border-radius: 10%;
+	-moz-border-radius: 10%;
+	border-radius: 10%;
+}
+#back-top a:hover {
+	color: #000;
+	background: rgba(0,0,0,0.6);
+}
+/*$(document).ready(function(){
+	// hide #back-top first
+	$("body").append("<p id='back-top'><a href='#top'> <i class='fa fa-chevron-up'></i></a></p>");
+	$("#back-top").hide();
+	// fade in #back-top
+	$(function () {
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 100) {
+				$('#back-top').fadeIn();
+			} else {
+				$('#back-top').fadeOut();
+			}
+		});
+		// scroll body to 0px on click
+		$('#back-top a').click(function () {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 800);
+			return false;
+		});
+	});
+
+});*/

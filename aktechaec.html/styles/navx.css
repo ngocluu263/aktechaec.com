@@ -1,0 +1,336 @@
+﻿/*Nav Desktop*/
+.menu {
+	width: 100%;
+	clear: both;
+	position:relative;
+	z-index:99999;
+	background:#EF313C;
+	border-bottom: solid 3px #D2D0C5
+}
+.menu .container {
+	text-align: left;
+	position:relative
+}
+.navx {
+	width: 100%;
+	clear: both;
+	position: relative;
+	display: inline-block;
+	 
+	background-size: auto 100%;
+}
+.navx h3, .navx h4, .navx h5 {
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+}
+.navx >ul {
+	text-align: center
+}
+.navx a {
+	text-decoration: none;
+	white-space: nowrap;
+	font-family: 'Roboto',Roboto ,Arial,Helvetica,sans-serif;
+	letter-spacing:0.5px
+}
+.navx ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+.navx ul ul {
+	display: none;
+	position: absolute;
+	background: rgba(36,173,93,1);
+}
+.navx ul ul a {
+	line-height: 30px;
+	padding-right: 10px;
+	padding-left: 10px;
+	color: #fff;
+	font-size:1em
+}
+.navx ul ul ul {
+	left: 100%;
+	top: -1px;
+}
+.navx ul ul li {
+	position: relative;
+	min-width: 190px;
+	text-align: left;
+	border-bottom: solid 1px #2EB968;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+.navx ul ul li:last-child {
+	border: 0;
+}
+.navx ul ul li:hover {
+	background: #1C8B4B
+}
+.navx ul ul li:hover > .lv1 > a {
+	color: #fff;
+}
+.navx ul li:hover>ul {
+	display: block;
+}
+.navx>ul {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	text-align: center
+}
+.navx>ul>li {
+	position: relative;
+	display: inline-block;
+	margin: 0;
+	text-align: center;
+	margin-left: 0;
+	margin-right: 0;
+}
+.navx>ul>li> .lv1 >a {
+	text-transform:uppercase;
+	color: #fff;
+	font-size: 1.2em;
+	line-height: 50px;
+	padding-bottom: 5px;
+	padding-left: 28px;
+	padding-right: 28px;
+	font-family: 'Roboto',Roboto ,Arial,Helvetica,sans-serif;
+	text-shadow: none;
+	transition: all 0.35s ease 0s;
+}
+.navx>ul>li:hover> a, .navx>ul>li.active> a, .navx>ul>li:focus> a {
+	color: #fff
+}
+ 
+.navx > ul > li > ul {
+	top: 100%;
+	left: 0;
+	margin-top: 0px;
+	z-index: 9;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix:before, .clearfix:after {
+	content: " ";
+	display: table;
+}
+/* nav mobile*/
+#pull {
+	display: none;
+	position: relative;
+	height: 30px;
+	width: 30px;
+	text-align: center;
+	width: 100%;
+}
+#pull i {
+	font-size: 23px;
+	margin-top: 5px;
+	color: #fff;
+}
+#btnClose {
+	display: none;
+	cursor: pointer;
+	text-align: right;
+	padding: 5px;
+}
+.fb img {
+	max-width: 100%
+}
+ @media screen and (min-width: 768px) {
+.navx ul ul {
+	border: solid 0px #fff;
+	-webkit-box-shadow: 0 5px 5px 0 rgba(0,0,0,0.6);
+	box-shadow: 0 5px 5px 0 rgba(0,0,0,0.6);
+	border: solid 0px #A2DBF7;
+	-webkit-box-shadow: 1px 1px 0px 0 rgba(2,112,41,1);
+	box-shadow: 1px 1px 0px 0 rgba(2,112,41,1);
+ 
+	z-index: 9;
+}
+.navx>ul>li {
+	margin: 0;
+	padding: 0;
+	float: left;
+ 
+	text-align: center;
+	 
+ 
+}
+.navx>ul>li:hover{background: rgba(36,173,93,1);}
+.navx>ul>li:first-child a {
+	border-left: 0;
+	text-align: center;
+	/*padding-left: 0px;
+	padding-right: 20px;*/
+}
+.navx>ul>li:first-child a i {
+	font-size: 17px;
+	line-height: 32px;
+}
+.navx>ul>li:last-child {
+	border-right: 0;
+	background-image:none
+}
+}
+@media screen and (max-width:992px) and (min-width:768px) {
+.navx>ul>li> .lv1 >a {
+	font-size: 0.9em;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.navy a {
+	font-size: 0.9em;
+	padding-left: 15px
+}
+}
+ @media screen and (max-width: 768px) {
+.navx>ul>li> .lv1 >a {
+	font-size: 0.9em;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.navx {
+	padding: 5px 0;
+	text-align: center;
+	width: 100%;
+}
+#pull {
+	display: block;
+}
+.parent .lv1:after {
+	content: "\00bb";
+	color: #000;
+	margin-left: 20px;
+	padding-right: 30px;
+	font-size: 20px;
+	padding-left: 10px;
+	padding: 10px 20px;
+}
+#btnClose {
+	display: block;
+}
+.navx >ul {
+	display: none;
+	margin-top: 0px;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	width: 100%;
+	background: #ddd;
+	z-index: 9;
+}
+.navx >ul>li {
+	float: none;
+	border: 0;
+	margin: 0;
+	text-align: left;
+	width: 100%;
+	display: inline-block;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	position:relative
+}
+.navx >ul>li:hover, .navx >ul>li:active, .navx >ul>li:focus {
+	color: #00477D
+}
+.navx>ul>li:hover a, .navx>ul>li.active a, .navx>ul>li:focus a {
+	color: #00477D
+}
+.navx >ul>li> .lv1 >a {
+	color: #000;
+	padding: 0;
+	padding-left: 10px;
+}
+.navx>ul>li:first-child {
+}
+.navx ul li, .navx ul, .navx ul ul {
+}
+.navx ul li {
+	border-bottom: solid #ccc 1px;
+}
+.navx ul li:hover>ul {
+	display: none;
+}
+.navx ul ul {
+	position: relative;
+	clear: both;
+	top: auto;
+	left: auto;
+}
+.navx ul ul li {
+	background: #ddd;
+	border-bottom: #ccc solid 1px;
+	background: #fff;
+}
+.navx ul ul li:hover {
+	background: #ddd;
+}
+.navx ul ul a {
+	padding-left: 15px;
+	color: #1A150B;
+	line-height: 35px;
+}
+.navx ul ul li:hover a {
+	color: #00477D
+}
+.navx > ul > li > ul {
+	position: relative;
+	clear: both;
+	top: auto;
+	left: auto;
+}
+.open {
+	border-bottom: 0;
+	padding-bottom: 0px !important;
+}
+.navxMb li {
+	color: #fff
+}
+#btnClose span {
+	color: #3294B9;
+	font-weight: bold;
+	margin-left: 5px;
+	margin-bottom: 5px;
+	font-size: 1em;
+	border: solid 1px #3294B9;
+	padding: 3px 7px;
+	-webkit-border-radius: 15px 15px 15px 15px;
+	border-radius: 15px 15px 15px 15px;
+}
+#btnClose {
+	color: #3294B9;
+	padding-bottom: 10px
+}
+.navx ul ul a {
+	line-height: 40px;
+	width: 100%
+}
+.openIco, .closeIco {
+	padding: 0 30px
+}
+}
+.caretB {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	vertical-align: middle;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid;
+	color: #E5D69B;
+	position: absolute;
+	top: -5px;
+	left: 30%;
+	display:none
+}
+.navx .animated {
+	-webkit-animation-duration: 0.2s;
+	animation-duration: 0.2s;
+}

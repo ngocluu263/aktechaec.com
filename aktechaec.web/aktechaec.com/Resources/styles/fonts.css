@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+	font-family: 'condensedbold';
+	src: url(../fonts/utm_swiss_condensedbold-webfont.eot);
+	src: url(../fonts/utm_swiss_condensedbold-webfont.eot) format('embedded-opentype'), url(../fonts/utm_swiss_condensedbold-webfont.otf) format('otf'), url(../fonts/utm_swiss_condensedbold-webfont.woff) format('woff'), url(../fonts/utm_swiss_condensedbold-webfont.ttf) format('truetype'), url(../fonts/utm_swiss_condensedbold-webfont.svg) format('svg')
+}
+@font-face {
+	font-family: 'Roboto';
+	src: url(../fonts/utm_swiss_condensed-webfont.eot);
+	src: url(../fonts/utm_swiss_condensed-webfont.eot) format('embedded-opentype'), url(../fonts/utm_swiss_condensed-webfont.otf) format('otf'), url(../fonts/utm_swiss_condensed-webfont.woff) format('woff'), url(../fonts/utm_swiss_condensed-webfont.ttf) format('truetype'), url(../fonts/utm_swiss_condensed-webfont.svg) format('svg')
+}
+ @font-face {
+	font-family: 'MyriadPro-Regular';
+	src: url(../fonts/MyriadPro-Regular.eot);
+	src: url(../fonts/MyriadPro-Regular.eot) format('embedded-opentype'), url(../fonts/MyriadPro-Regular.otf) format('otf'), url(../fonts/MyriadPro-Regular.woff) format('woff'), url(../fonts/MyriadPro-Regular.ttf) format('truetype'), url(../fonts/MyriadPro-Regular.svg) format('svg')
+}
+
+@font-face {
+	font-family: 'condense';
+	src: url(../fonts/utm_swiss_condensed-webfont.eot);
+	src: url(../fonts/utm_swiss_condensed-webfont.eot) format('embedded-opentype'), url(../fonts/utm_swiss_condensed-webfont.otf) format('otf'), url(../fonts/utm_swiss_condensed-webfont.woff) format('woff'), url(../fonts/utm_swiss_condensed-webfont.ttf) format('truetype'), url(../fonts/utm_swiss_condensed-webfont.svg) format('svg')
+}
